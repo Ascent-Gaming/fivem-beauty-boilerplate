@@ -36,7 +36,7 @@ No additional steps need to be taken to begin using Preact. See `src/html/` for 
 
 By default, the UI will provide Bootstrap. This means you're free to start making NUI's using the full power of Bootstrap v5.
 
-> Customization for Bootstrap will come at a later date. In short, in involves adding the Bootstrap SCSS source files and setting up SASS to compile these files to CSS. This process can be made-easy by hooking into the `watch` command to auto-comile on changes to the directory your custom SCSS resides.
+> Customization for Bootstrap will come at a later date. In short, in involves adding the Bootstrap SCSS source files and setting up SASS to compile these files to CSS. This process can be made-easy by hooking into the `watch` command, i.e. by using [`concurrently`](https://www.npmjs.com/package/concurrently), to compile changes to the directory your custom SCSS resides as you make them.
 
 ### Development
 Use `npm run watch` to watch files during development.
