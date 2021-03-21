@@ -81,7 +81,7 @@ It makes a great pairing for Preact, as it lets you write reusable components wi
 
 ## What's Next?
 
-I'd love to provide a set of customizable Preact components for NUI frontends, powered by Tailwind of course.
+~Create~, expand, and promote [`fivem_beauty_components`](https://github.com/Ascent-Gaming/fivem_beauty_components), a component-library made to compliment this boilerplate, built using it.
 
 Improve build process; instead of splitting the resource in `./dist/` and the NUI in `./src/html/`, copy the needed files from `./src/html/` to `./dist/`.
 
