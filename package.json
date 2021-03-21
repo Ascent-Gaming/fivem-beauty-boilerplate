@@ -9,10 +9,13 @@
     "realStandal <realStandal@users.noreply.github.com>"
   ],
   "scripts": {
-    "build": "webpack --mode production",
+    "build:nui:styles": "cross-env NODE_ENV=production postcss src/html/styles/style.css -o src/html/styles/dist/styles.css",
+    "build:nui": "npm run build:nui:styles",
+    "build:script": "webpack --mode production",
+    "watch:nui:styles": "postcss -w src/html/styles/style.css -o src/html/styles/dist/style.css",
+    "watch:script": "webpack --mode development --watch true",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "watch": "webpack --mode development --watch true"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "license": "MIT",
   "private": false,
