@@ -9,12 +9,10 @@
     "realStandal <realStandal@users.noreply.github.com>"
   ],
   "scripts": {
-    "build:nui:styles": "cross-env NODE_ENV=production postcss src/html/styles/style.css -o src/html/styles/dist/style.css",
-    "build:nui": "npm run build:nui:styles",
+    "build:nui": "cross-env NODE_ENV=production postcss src/html/styles/style.css -o src/html/styles/dist/style.css",
     "build:script": "webpack --mode production",
     "build": "concurrently \"npm run build:nui\" \"npm run build:script\"",
-    "watch:nui:styles": "postcss -w src/html/styles/style.css -o src/html/styles/dist/style.css",
-    "watch:nui": "npm run watch:nui:styles",
+    "watch:nui": "postcss -w src/html/styles/style.css -o src/html/styles/dist/style.css",
     "watch:script": "webpack --mode development --watch true",
     "watch": "concurrently \"npm run watch:nui\" \"npm run watch:script\"",
     "format": "prettier --write \"src/**/*.ts\"",
